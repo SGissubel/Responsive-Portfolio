@@ -1,5 +1,5 @@
 body {
-	background: url();
+	background: url("../images/background.jpg");
 	font-size: 18px;
 	line-height: 34px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -106,8 +106,15 @@ img .me {
 #bodycontainer {
 	padding-top: 130px;
 }
-.container {
 
+.section-main {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	border: 1px solid #ddd;
 }
 
 .sidebar {
@@ -138,6 +145,21 @@ h3,
 .social:last-child {
 	margin-right: 0px;
 }
+
+/*porfolio page css*/
+
+.work {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+
 
 
 footer {
