@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Steven Gissubel Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="../assets/reset.css">
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 	</head>
 <body>
-<!-- 
-<div class="wrapper"> -->
+
 	<header id="header">
 		<div class="container">
 			<a href="index.html" id="logo">Steven Gissubel</a>
@@ -20,15 +20,64 @@
 
 	</header>
 
-	
 	<div id="bodycontainer" class="container">
 		<section class="section-main">
-			<h1>Contact</h1>
+			<h1>Contact Me</h1>
 
-			<form 
+			<form action="action_page.php">
+			    <label for="fname">Name</label>
+			    <input type="text" id="fname" name="firstname" placeholder="Westminster Hogglepotter">
+
+			    <label for="email">Email</label>
+			    <input type="text" id="email" name="email" placeholder="e-gads@geemail.com">
+
+			    <label for="message">Message</label>
+			    <input type="text" id="message" name="message">
+
+			   <input type="submit" value="Submit">
+
+	  		</form>
 
 
-<!-- </div> .wrapper???? -->
 
+				</ul>
+
+
+			</form> <!-- end #contact-form -->
+
+		</section> <!-- end .section-main -->
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect With Me</h2>
+
+				<a href="https://github.com/SGissubel" target="_blank">
+				<img id="github" src="../images/GitHub.png" alt="github icon" class="social">
+				</a>
+					
+				<a href="https://www.linkedin.com/in/stevengissubel" target="_blank">
+				<img id="linkedin" src="../images/Linkedin.png" alt="linked in icon" class="social">
+				</a>
+					
+				<a href="http://stackoverflow.com/users/6867501/steven-gissubel?tab=profile" target="_blank">
+				<img id="stackoverflow" src="../images/stackoverflow.png" alt="stackoverflow icon" class="social">
+				</a>
+			</div> <!-- end #connect -->
+
+		</section> <!-- end .sidebar -->
+
+	</div> <!-- end #bodycontainer .container -->
+
+
+
+		<!-- ends #bodycontainer & .container -->
+
+	
+	
+
+
+	<footer>
+		<small>&#169; Copyright 2016 Steven Gissubel</small>
+	</footer>
 </body>
 </html>
