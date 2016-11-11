@@ -157,7 +157,8 @@ h3,
 	position: relative;
 	float: left;
 	margin: 20px 0 25px;
-}/*.work img {
+}
+/*.work img {
 	width: 200px;
 	height: auto;
 	margin-top: 10px;
@@ -188,13 +189,7 @@ h3,
 	font-weight: 300;
 }
 
-/*.work img {
-	width: 270px;
-	height: auto;
-	margin-top: 10px;
-	float: left;
-	margin-right: 25px;
-}*/
+
 
 
 footer {
