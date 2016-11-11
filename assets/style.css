@@ -1,3 +1,4 @@
+
 body {
 	background: url("../images/background.jpg");
 	font-size: 18px;
@@ -81,6 +82,7 @@ h3 {
 nav {
 	float: right;
 	margin-top: 25px;
+	max-width: 100%;
 }
 
 nav a{
@@ -150,11 +152,18 @@ h3,
 
 .work {
 	width: 274px;
+	height: auto;
 	overflow: auto;
 	position: relative;
 	float: left;
 	margin: 20px 0 25px;
-}
+}/*.work img {
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}*/
 
 .work:nth-child(even) {
 	margin-right: 40px;
@@ -179,13 +188,13 @@ h3,
 	font-weight: 300;
 }
 
-img {
-	width: 200px;
+/*.work img {
+	width: 270px;
 	height: auto;
 	margin-top: 10px;
 	float: left;
 	margin-right: 25px;
-}
+}*/
 
 
 footer {
@@ -199,6 +208,12 @@ footer {
 	text-align: center;
 }
 
+
+
+/*contact*/
+
+
+
 input[type=text], select {
     width: 100%;
     padding: 12px 12px;
@@ -210,8 +225,6 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-
-/*contact*/
 
 #message {
 	width: 100%;
@@ -246,19 +259,62 @@ input:hover {
 
 /*media queries*/
 
+@media screen and (min-width: 780px) and (max-width: 980px) {
+	.container,
+	#bodycontainer {
+		width: 90%;
+	}
 
-/*@media screen and (max-width: 980px) {
-	.container 
-	#bodycontainer{
+	.section-main {
+		width: 50%;
+	}
+
+
+	nav {
+		width: 40%;
+	}
+
+	.me {
 		width: 100%
 	}
 
-	#header,
-	nav {
-		width: 100%;
-		position: relative;
+	.sidebar {
+
 	}
-*/
+}
+
+@media screen and (min-width: 640px) and (max-width: 780px) {
+	.container, 
+	#bodycontainer{
+		width: 95%;
+	}
+	
+	nav {
+		width: 50%;
+	}
+
+	.me {
+		width: 60%;
+	}
+	.sidebar {
+		width: 100%;
+		max-width: none;
+		text-align: center;
+	}
+	#connect h2 {
+		line-height: 0;
+	}
+
+	.social {
+		max-width: 100%;
+	}
+
+	.social:first-child {
+		margin-left: 8%;
+	}
+	.social:last-child {
+		margin-right: 14%
+	}
 }
 
 
@@ -268,6 +324,10 @@ input:hover {
 	#header {
 		width: 100%;
 		position: relative;	
+	}
+
+	.me {
+		width: 100%;
 	}
 	nav {
 		width: 100%;
@@ -312,7 +372,7 @@ input:hover {
 		margin-left: 8%;
 	}
 	.social:last-child {
-		margin-right: 8%
+		margin-right: 9%
 	}
 }
 
